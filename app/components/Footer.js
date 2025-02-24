@@ -1,21 +1,46 @@
-'use client'
-import Link from 'next/link'
+"use client";
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B5079] text-white py-8 px-4">
-      <div className="max-w-7xl mx-auto flex flex-row md:flex-row justify-between items-start">
-        
-        {/* Secțiunea cu datele companiei */}
-        <div className='m-4 mr-12'>
+    <footer className="bg-sky-100 text-blue-900 py-8 px-4">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
+        {/* Company Info Section */}
+        <div className="m-4 mr-12">
           <h2 className="font-bold text-lg">PAC Water</h2>
           <p className="mt-2">Distribuitor de produse pentru tratarea apei.</p>
-          <p className="mt-1">Adresa: Patrangeni,Alba</p>
-          <p className="mt-1">Telefon: +40722277303</p>
-          <p className="mt-1">Email: pacwater@gmail.com </p>
+          <p className="mt-1">Adresa: Patrangeni, Alba</p>
+          <p className="mt-1">
+            Telefon: <a href="tel:+40722277303" className="underline text-blue-900">+40722277303</a>
+          </p>
+          <p className="mt-1">
+            Email: <a href="mailto:pacwater@gmail.com" className="underline text-blue-900">pacwater@gmail.com</a>
+          </p>
         </div>
 
-        {/* Link-uri utile (placeholder) */}
+        {/* External Logos Section */}
+        <div className="flex flex-col items-center justify-center m-4">
+          <a href="https://anpc.ro/" target="_blank" rel="noreferrer">
+            <Image
+              src="https://anpc.ro/wp-content/uploads/brizy/imgs/wp-7af89f9c287bc8c5cecef1fdd442bffc-185x87x0x0x185x87x1701197532.png"
+              alt="ANPC"
+              width={185}
+              height={87}
+              className="mb-4"
+            />
+          </a>
+          <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" target="_blank" rel="noreferrer">
+            <Image
+              src="https://ec.europa.eu/consumers/odr/resources/public2/images/YourEU-logo%20panton%20monochrom%20horisontal.svg"
+              alt="YourEU"
+              width={185}
+              height={87}
+            />
+          </a>
+        </div>
+
+        {/* Useful Links Section */}
         <div className="m-4 ml-12">
           <h2 className="font-bold text-lg">Link-uri utile</h2>
           <ul className="mt-2 space-y-1">
@@ -35,18 +60,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Placeholder pentru logouri/alte linkuri */}
-      {/* Poți pune aici două imagini cu link, de exemplu:
-          <div className="flex space-x-4 mt-6">
-            <a href="https://exemplu.ro" target="_blank" rel="noreferrer">
-              <Image src="/logo-partener1.png" alt="Partener 1" width={60} height={60} />
-            </a>
-            <a href="https://exemplu2.ro" target="_blank" rel="noreferrer">
-              <Image src="/logo-partener2.png" alt="Partener 2" width={60} height={60} />
-            </a>
-          </div>
-      */}
-
       {/* Copyright */}
       <div className="mt-8 text-center">
         <p className="text-sm">
@@ -54,5 +67,5 @@ export default function Footer() {
         </p>
       </div>
     </footer>
-  )
+  );
 }

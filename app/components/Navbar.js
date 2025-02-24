@@ -38,23 +38,23 @@ export default function Navbar() {
 
   const equipmentLinks = [
     { name: "VTA mudinator®", href: "/echipamente/vta-mudinator" },
-    { name: "VTA Storage tank", href: "/echipamente/vta-storage-tank" },
-    { name: "Eurodos Customised dosing", href: "/echipamente/eurodos-customised-dosing" },
-    { name: "Post-dilution station", href: "/echipamente/post-dilution-station" },
+    { name: "Rezervor de stocare VTA", href: "/echipamente/vta-storage-tank" },
+    { name: "Dozare personalizată Eurodos", href: "/echipamente/eurodos-customised-dosing" },
+    { name: "Stație post-diluare", href: "/echipamente/post-dilution-station" },
     { name: "Eurofloc 2KT", href: "/echipamente/eurofloc-2kt" },
     { name: "VTA Inline Mixer", href: "/echipamente/vta-inline-mixer" },
     { name: "VTA Microturbine", href: "/echipamente/vta-microturbine" },
     { name: "VTA GSD", href: "/echipamente/vta-gsd" },
-    { name: "VTA Polymer dissolving station", href: "/echipamente/vta-polymer-solution-station" },
+    { name: "Stație de dizolvare a polimerilor VTA", href: "/echipamente/vta-polymer-solution-station" },
     { name: "Eurofloc 1K", href: "/echipamente/eurofloc-1k" },
     { name: "Eurofloc 2KT-R", href: "/echipamente/eurofloc-2kt-r" },
-    { name: "VTA Underground tank", href: "/echipamente/vta-underground-tank" },
-    { name: "VTA service & Plant optimization", href: "/echipamente/vta-service-plant-optimization" },
-    { name: "VTA dosing station", href: "/echipamente/vta-dosing-station" },
+    { name: "Rezervor subteran VTA", href: "/echipamente/vta-underground-tank" },
+    { name: "Service & Optimizare Instalații VTA", href: "/echipamente/vta-service-plant-optimization" },
+    { name: "Stație de dozare VTA", href: "/echipamente/vta-dosing-station" },
     { name: "Eurofloc 2KP", href: "/echipamente/eurofloc-2kp" },
     { name: "Eurofloc 3K", href: "/echipamente/eurofloc-3k" },
   ];
-
+  
   const drawerVariants = {
     hidden: { x: "100%" },
     visible: { x: 0 },
